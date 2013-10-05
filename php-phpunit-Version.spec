@@ -4,7 +4,7 @@
 Summary:	Managing the version number of Git-hosted PHP projects
 Name:		php-phpunit-Version
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	The BSD 3-Clause License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -16,7 +16,7 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php-channel(pear.phpunit.de)
-Requires:	php-pear
+Requires:	php-pear >= 1.3.14-2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,5 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog install.log
 %doc docs/Version/*
 %{php_pear_dir}/.registry/.channel.*/*.reg
-%dir %{php_pear_dir}/SebastianBergmann
 %{php_pear_dir}/SebastianBergmann/Version
