@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Managing the version number of Git-hosted PHP projects
 Name:		php-phpunit-Version
-Version:	1.0.1
-Release:	2
-License:	The BSD 3-Clause License
+Version:	1.0.3
+Release:	1
+License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	2f946dfc4e1c84d676a46c9364c81825
+# Source0-md5:	9c4bc1c530fad759dfa49bdeabc598f7
 URL:		http://pear.phpunit.de/package/Version/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
