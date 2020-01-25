@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Version
-%include	/usr/lib/rpm/macros.php
 Summary:	Managing the version number of Git-hosted PHP projects
 Name:		php-phpunit-Version
 Version:	1.0.3
